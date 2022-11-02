@@ -16,7 +16,7 @@ jobs:
           npm test
       - name: Build Android Release
         run: |
-          cd android && chmod +x gradlew && ./gradlew assembleRelease -MYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -MYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}'
+          cd android && chmod +x gradlew && ./gradlew assembleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
