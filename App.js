@@ -50,6 +50,7 @@ const Section = ({children, title}): Node => {
         ]}>
         {children}
       </Text>
+      <Text>Testing water level</Text>
     </View>
   );
 };
