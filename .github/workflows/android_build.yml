@@ -118,4 +118,4 @@ jobs:
 
           name: app-release.apk
 
-          path: home/runner/work/testitem/testitem/android/app/build/outputs/apk/release/
+          path: android/app/
