@@ -118,4 +118,4 @@ jobs:
 
           name: app-release.apk
 
-          path: android/app/
+          path: android/app/app-release.apk
