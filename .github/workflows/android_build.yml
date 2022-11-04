@@ -100,7 +100,7 @@ jobs:
 
         with:
 
-          releaseDirectory: android/app/build/outputs/apk/release
+          releaseDirectory: android/app
 
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
 
@@ -110,9 +110,6 @@ jobs:
 
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
       
-      - name: create output folder
-        run: mkdir output
-
       - name: Upload Artifact
 
         uses: actions/upload-artifact@v1
@@ -121,4 +118,4 @@ jobs:
 
           name: app-release.apk
 
-          path: output
+          path: android/app
