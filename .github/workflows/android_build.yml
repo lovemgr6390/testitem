@@ -109,6 +109,9 @@ jobs:
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
 
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      
+      - name: create output folder
+        run: mkdir output
 
       - name: Upload Artifact
 
@@ -118,4 +121,4 @@ jobs:
 
           name: app-release.apk
 
-          path: android/app/app-release.apk
+          path: oputput
