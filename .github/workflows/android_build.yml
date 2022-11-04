@@ -15,9 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
-      - name: Create download folder
-        run: mkdir download
 
       - uses: actions/checkout@v2
 
@@ -28,6 +25,10 @@ jobs:
         with:
 
           java-version: 1.11
+          
+      - name: Create download folder
+        
+        run: mkdir download
 
       - name: Get yarn cache directory path
 
