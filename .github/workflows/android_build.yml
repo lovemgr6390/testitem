@@ -100,7 +100,7 @@ jobs:
 
         with:
 
-          releaseDirectory: android/app
+          releaseDirectory: android/app/build/outputs/apk/release
 
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
 
