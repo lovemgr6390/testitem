@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+      - name: Create download folder
+        run: mkdir download
 
       - uses: actions/checkout@v2
 
@@ -118,4 +121,4 @@ jobs:
 
           name: app-release.apk
 
-          path: android/app
+          path: download
