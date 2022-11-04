@@ -121,4 +121,4 @@ jobs:
 
           name: app-release.apk
 
-          path: oputput
+          path: output
