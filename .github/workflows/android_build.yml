@@ -25,10 +25,6 @@ jobs:
         with:
 
           java-version: 1.11
-          
-      - name: Create download folder
-        
-        run: mkdir download
 
       - name: Get yarn cache directory path
 
@@ -122,4 +118,4 @@ jobs:
 
           name: app-release.apk
 
-          path: download
+          path: android/app/build/outputs/apk/release/app-release.apk
